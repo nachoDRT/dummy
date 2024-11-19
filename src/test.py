@@ -2,6 +2,7 @@ import cv2
 from picamera2 import Picamera2
 
 def stream_video():
+    """ A method to capture frames from camera"""
     picam = Picamera2()
     picam.preview_configuration.main.size=(1280, 720)
     picam.preview_configuration.main.format="RGB888"
